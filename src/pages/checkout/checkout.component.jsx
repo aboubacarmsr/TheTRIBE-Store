@@ -16,27 +16,27 @@ const CheckoutPage = ({ cartItems, total }) => (
   <div className='checkout-page'>
     <div className='checkout-header'>
       <div className='header-block'>
-        <span>Product</span>
+        <span>Article</span>
       </div>
       <div className='header-block'>
-        <span>Description</span>
+        <span>Nom</span>
       </div>
       <div className='header-block'>
-        <span>Quantity</span>
+        <span>Quantité</span>
       </div>
       <div className='header-block'>
-        <span>Price</span>
+        <span>Prix</span>
       </div>
       <div className='header-block'>
-        <span>Remove</span>
+        <span>Supprimer</span>
       </div>
     </div>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <div className='total'>TOTAL: ${total}</div>
+    <div className='total'>TOTAL: DT {total}</div>
     <div className='test-warning'>
-      *Please use the following test credit card for payments*
+      Carte de paiement pour test
       <br />
       4242 4242 4242 4242 - Exp: 01/20 - CVV: 123
     </div>

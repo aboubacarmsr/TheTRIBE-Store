@@ -15,8 +15,11 @@ import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>
-    <Link className='logo-container' to='/'>
+    {/* <Link className='logo-container' to='/'>
       <Logo className='logo' />
+    </Link> */}
+    <Link className="logo-container" to='/'>
+        The Tribe
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
@@ -39,6 +42,7 @@ const Header = ({ currentUser, hidden }) => (
     {hidden ? null : <CartDropdown />}
   </div>
 );
+//Penser à regler le probleme du panier quand il est hors ligne
 
 //Fonction redux qui permet d'aller recuperer la valeur du current User dans dans le user Reducer
 //Les noms user et cart sont dans le rootreducer ils representent chacun le reducer correspondant
