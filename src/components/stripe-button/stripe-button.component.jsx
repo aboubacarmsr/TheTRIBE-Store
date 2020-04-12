@@ -18,9 +18,9 @@ const StripeCheckoutButton = ({ price }) => {
       name='The TRIBE Store Ltd.'
       billingAddress
       shippingAddress
-      currency="DT"
-      image='https://svgshare.com/i/CUz.svg'
-      description={`Le total est DT ${price}`}
+      currency="USD"
+      image='https://i.ibb.co/zGBNQxp/logo.png'
+      description={`Le total est $${price}`}
       amount={priceForStripe}
       panelLabel='Paiement'
       token={onToken}
