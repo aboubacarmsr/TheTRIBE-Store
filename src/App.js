@@ -38,7 +38,7 @@ class App extends React.Component {
 
       setCurrentUser(userAuth);
       // On n'ajoute que le titre et les elements de chaque categorie dans la DB
-      addCollectionAndDocuments('collections', collectionsArray.map(({ title, items }) => ({ title, items })));
+      // addCollectionAndDocuments('collections', collectionsArray.map(({ title, items }) => ({ title, items })));
     });
   }
 
