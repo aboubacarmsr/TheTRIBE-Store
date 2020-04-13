@@ -4,7 +4,7 @@ const INITIAL_STATE = {
       title: 'accessoires',
       imageUrl: 'https://i.ibb.co/GctvxWK/hats.jpg',
       id: 1,
-      linkUrl: 'shop/hats'
+      linkUrl: 'shop/accessoires'
     },
     {
       title: 'jackets',
@@ -23,14 +23,14 @@ const INITIAL_STATE = {
       imageUrl: 'https://i.ibb.co/wy1Y25d/women.jpg',
       size: 'large',
       id: 4,
-      linkUrl: 'shop/womens'
+      linkUrl: 'shop/femmes'
     },
     {
       title: 'hommes',
       imageUrl: 'https://i.ibb.co/4tWf6Nt/vonecia-carswell-D3-HSYAUj-Vr-M-unsplash.jpg',
       size: 'large',
       id: 5,
-      linkUrl: 'shop/mens'
+      linkUrl: 'shop/hommes'
     }
   ]
 };
