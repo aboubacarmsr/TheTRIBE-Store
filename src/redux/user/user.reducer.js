@@ -1,7 +1,8 @@
-import { UserActionTypes } from './user.types';
+import UserActionTypes from './user.types';
 
 const INITIAL_STATE = {
-  currentUser: null
+  currentUser: null,
+  error: null
 };
 
 //Le reducer prend un etat initial (etat precedent du state) + l'action à effectuer. Si cette action correspond
@@ -9,11 +10,19 @@ const INITIAL_STATE = {
 //Sinon il retourne le state comme il l'a reçu
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case UserActionTypes.SET_CURRENT_USER:
+    case UserActionTypes.SIGN_IN_SUCCESS:
+    case UserActionTypes.SIGN_IN_SUCCESS:
       return {
         ...state,
-        currentUser: action.payload
+        currentUser: action.payload,
+        error: null
       };
+    case UserActionTypes.SIGN_IN_FAILURE:
+    case UserActionTypes.SIGN_IN_FAILURE:
+      return {
+        ...state,
+        error: action.payload
+      }
     default:
       return state;
   }
