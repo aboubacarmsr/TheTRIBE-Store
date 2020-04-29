@@ -13,7 +13,7 @@ import './header.styles.scss';
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
   <div className='header'>
-    <Link className="logo-container" to='/'>
+    <Link className="title-container" to='/'>
         The Tribe
     </Link>
     <div className='options'>
