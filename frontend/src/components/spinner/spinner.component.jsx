@@ -1,11 +1,10 @@
 import React from 'react'
-import './spinner.styles.scss'
+import SpinnerComponent from '../spinner-component/spinner-component.jsx';
+
 
 const Spinner = RandomComponent => ({ isLoading, ...otherProps }) => {
     return isLoading ? (
-        <div className="SpinnerOverlay">
-            <div className="SpinnerContainer"/>
-        </div>
+        <SpinnerComponent/>
     ) : (
         <RandomComponent {...otherProps}/>
     )
