@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+import { ReactComponent as GoogleIcon } from '../../assets/google.svg';
 
 import { googleSignInStart, emailSignInStart } from '../../redux/user/user.actions'
 
@@ -51,7 +52,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           <div className='buttons'>
             <CustomButton type='submit'> Connexion </CustomButton>
             <CustomButton type='button' onClick={googleSignInStart} isGoogleSignIn>
-              Connexion avec Google
+              <GoogleIcon className="google-icon"/>
             </CustomButton>
           </div>
         </form>

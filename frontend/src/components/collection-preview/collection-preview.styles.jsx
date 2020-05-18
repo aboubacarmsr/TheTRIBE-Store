@@ -11,9 +11,10 @@ export const CollectionPreviewContainer = styled.div`
 
 export const TitleContainer = styled.h1`
   font-size: 28px;
-  font-family: 'Open Sans Condensed';
+  font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 25px;
   cursor: pointer;
+  letter-spacing: 1px;
   &:hover {
     color: grey;
   }

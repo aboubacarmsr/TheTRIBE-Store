@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+//Config par defaut fournie par Firebase
 const config = {
     apiKey: "AIzaSyCqDilj0kKMh6ILiNyaIjfSJUYyb1bblUU",
     authDomain: "tribe-db.firebaseapp.com",
@@ -33,7 +34,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         ...additionalData
       });
     } catch (error) {
-      console.log('error creating user', error.message);
+      console.log('erreur', error.message);
     }
   }
 
@@ -46,6 +47,7 @@ export const firestore = firebase.firestore();
 
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: 'select_account' });
+//Ouvre au clic la fenêtre des différents comptes Google
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 //Exportation des data de shop.data vers Firebase

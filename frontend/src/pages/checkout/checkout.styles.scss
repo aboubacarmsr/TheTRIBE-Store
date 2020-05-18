@@ -6,6 +6,13 @@
   align-items: center;
   margin: 50px auto 0;
 
+  .checkout-title {
+    font-size: 30px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
   .checkout-header {
     width: 100%;
     padding: 10px 0;
@@ -38,6 +45,13 @@
     text-align: center;
     margin-top: 40px;
     font-size: 20px;
+    // color: red;
+  }
+
+  .option{
+    cursor: pointer;
     color: red;
+    text-transform: uppercase;
+    margin-top: 40px;
   }
 }
