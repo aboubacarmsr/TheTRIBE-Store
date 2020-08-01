@@ -20,6 +20,7 @@ const ContactPage = lazy(() => import('./pages/contact/contact-page.component'))
 //En mode Production, lazy et Suspense permettent de charger le contenu d'un component uniquement s'il est necessaire
 //ErrorBoundary permet de détecter une erreur et d'afficher une page en consequence (test sur le home)
 
+//NOTE : CREER UNE PAGE NOT FOUND COMPONENT POUR LES URLs INEXISTANTES
 const App = ({ checkUserSession, currentUser }) => {
 
     useEffect(() => {
